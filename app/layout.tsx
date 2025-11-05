@@ -26,6 +26,11 @@ const pressStart2P = Press_Start_2P({
 export const metadata: Metadata = {
   title: "Hash Pix",
   description: "light-weight pixel avatar generator",
+  icons: {
+    icon: "/logo.png",
+    shortcut: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: { // for social media, search engines, etc. This creates a preview card for the website.
     title: "Hash Pix",
     description: "light-weight pixel avatar generator",

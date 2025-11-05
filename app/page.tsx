@@ -1,5 +1,6 @@
 "use client"
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const PixelAvatarGenerator = () => {
   const [uuid, setUuid] = useState('');
@@ -239,18 +240,18 @@ const PixelAvatarGenerator = () => {
           <div className="bg-white rounded-l-xl shadow-lg px-4 py-8 flex flex-col items-center justify-center gap-6">
             <div className="writing-vertical-rl" style={{ transform: 'rotate(180deg)' }}>
               <p 
-                className="text-gray-600 text-xs whitespace-nowrap"
+                className="text-gray-600 text-xs whitespace-nowrap flex items-center gap-1"
                 style={{ fontFamily: 'var(--font-press-start-2p)' }}
               >
-                built with &lt;3 by <a href="https://vinitkeshri.com" className="text-blue-600 hover:text-blue-700" target="_blank" rel="noopener noreferrer">vinit</a>
+                Built with <Image src="/heart.png" alt="heart" width={24} height={24} className="inline-block rotate-90" /> by <a href="https://vinitkeshri.com" className="text-blue-600 hover:text-blue-700" target="_blank" rel="noopener noreferrer">Vinit</a>
               </p>
             </div>
-            <div className="bg-white rounded-lg p-3">
+            <div className="bg-white rounded-lg p-1 -rotate-90">
               <a 
-                href="https://github.com/vinitkeshri/hash-pix" 
+                href="https://github.com/vinitkesh/hash-pix" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center justify-center hover:opacity-80 transition-opacity"
+                className="flex items-center justify-center hover:scale-110 transition-all duration-300"
                 aria-label="View on GitHub"
               >
                 <svg 
